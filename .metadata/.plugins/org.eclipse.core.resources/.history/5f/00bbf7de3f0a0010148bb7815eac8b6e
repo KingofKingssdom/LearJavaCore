@@ -1,0 +1,44 @@
+package Test;
+
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+		public static int UCLN(int a, int b) {
+			while(b!=0) {
+				int temp = b;
+				b = a % b;
+				a = temp;
+			}
+			return a;
+		}
+		public static int BCNN(int a, int b) {
+			int result = (a*b) / UCLN(a,b);
+				return result; 
+		}
+		public static List<Integer> CongHaiPhanSo(List<Integer> a, List<Integer> b){
+			List<Integer> result = new ArrayList<Integer>();
+			int mauSoChung = BCNN(a.get(1), b.get(1));
+			int tuSo = (a.get(0)) * (mauSoChung/a.get(1)) + (b.get(0)) * (mauSoChung/b.get(1));
+			int rutGonPhanSo = UCLN(tuSo,mauSoChung);
+			int tuSoRutGon = tuSo/rutGonPhanSo;
+			int mauSoRutGon = mauSoChung/rutGonPhanSo;
+			result.add(tuSoRutGon);
+			result.add(mauSoRutGon);
+			return result;
+	}
+	
+	public static void main(String[] args) {
+		List<Integer> a = new ArrayList<>();
+        a.add(2);
+        a.add(4);
+        List<Integer> b = new ArrayList<>();
+        b.add(3);
+        b.add(6);
+		List<Integer> result = CongHaiPhanSo(a, b);
+		System.out.println(result);
+		
+		
+	}
+}

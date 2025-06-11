@@ -1,0 +1,16 @@
+package Test;
+
+public class Test {
+	public static int GiaiThua(int n) {
+		int tich = 1;
+		for(int i =1;i<= n;i++) {
+			tich *=i;
+		}
+		return tich;
+	}
+	public static void main(String[] args) {
+		int x = 5;
+		System.out.println(GiaiThua(x));
+		
+	}
+}

@@ -1,0 +1,21 @@
+package Test;
+
+public class Test {
+	public static boolean soNguyenTo(int n) {
+		if(n<=1) {
+			return false;
+		}
+		for(int i =2;i<n;i++) {
+			if(n%i==0) {
+				return false;
+			}
+			
+		}
+		return true;
+	}
+	public static void main(String[] args) {
+		int x = 12;
+		System.out.println(soNguyenTo(x));
+		
+	}
+}

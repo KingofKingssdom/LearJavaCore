@@ -1,0 +1,27 @@
+package Contructor;
+
+import java.util.Objects;
+
+public class Example {
+	private int roll;
+	private  String name;
+
+	public  Example() {
+		
+		System.out.println("Hàm contructor mặc định");
+	}
+	
+	public Example(int roll) {		
+		this();
+		System.out.println(roll);
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+}

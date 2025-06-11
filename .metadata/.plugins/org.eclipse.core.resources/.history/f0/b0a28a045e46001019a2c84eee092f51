@@ -1,0 +1,25 @@
+package DataType;
+
+public class PrimitiveDataType {
+	public static void main(String[] args) {
+		// Kiểu dữ liệu nguyên thủy
+		// boolean
+		boolean b = true;
+		boolean b1 = false;
+		// byte
+		byte by = 4;
+		// char
+		char c = 'A'; // sử dụng dấu nháy đơn
+		// short
+		short s = 56;
+		// int 
+		int x = 10;
+		// long
+		long l = 121L;
+		// float
+		float  f = 4.12f;
+		// double 
+		double d = 4.15;
+	}
+	
+}

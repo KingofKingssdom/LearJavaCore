@@ -1,0 +1,9 @@
+package Contructor;
+
+public class Child extends Parent{
+	private String color;
+	 public Child(String name, int age,String color) {
+		super(name, age);
+		this.color = color;
+	}
+}

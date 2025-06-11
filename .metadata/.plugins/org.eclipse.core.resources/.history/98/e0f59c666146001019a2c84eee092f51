@@ -1,0 +1,17 @@
+package Variable;
+
+public class StaticVariable {
+	// Biến tĩnh còn được gọi là biến lớp. 
+	// Các biến này được khai báo tương tự như các biến thể hiện. Sự khác biệt là các biến tĩnh được khai báo bằng từ khóa static trong một lớp bên ngoài bất kỳ phương thức, hàm tạo hoặc khối nào.
+	// Không giống như các biến thể hiện, chúng ta chỉ có thể có một bản sao của biến tĩnh cho mỗi lớp, bất kể chúng ta tạo bao nhiêu đối tượng.
+	// Biến tĩnh được tạo ra khi bắt đầu thực thi chương trình và tự động bị hủy khi quá trình thực thi kết thúc.
+	// Việc khởi tạo biến tĩnh không bắt buộc. Giá trị mặc định của nó phụ thuộc vào kiểu dữ liệu của biến. Đối với String , nó là null , đối với float , nó là 0.0f , đối với int , nó là 0 , đối với các lớp Wrapper như Integer , nó là null,
+	// Nếu chúng ta truy cập một biến tĩnh như một biến thể hiện (thông qua một đối tượng), trình biên dịch sẽ hiển thị một thông báo cảnh báo, điều này sẽ không dừng chương trình. Trình biên dịch sẽ tự động thay thế tên đối tượng bằng tên lớp.
+	// Nếu chúng ta truy cập một biến tĩnh mà không có tên lớp, trình biên dịch sẽ tự động thêm tên lớp. Nhưng để truy cập biến tĩnh của một lớp khác, chúng ta phải đề cập đến tên lớp vì 2 lớp khác nhau có thể có một biến tĩnh có cùng tên.
+	// Biến tĩnh không thể được khai báo cục bộ bên trong phương thức thể hiện.
+	// Các khối tĩnh có thể được sử dụng để khởi tạo các biến tĩnh.
+	public static String name = "Huy";
+	public static void main(String[] args) {
+		System.out.println(name);
+	}
+}

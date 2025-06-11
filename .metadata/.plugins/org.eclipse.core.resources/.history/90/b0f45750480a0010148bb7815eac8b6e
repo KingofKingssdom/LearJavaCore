@@ -1,0 +1,25 @@
+package Test;
+
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+	public static boolean isPalindrome(int n) {
+		int reverse = 0;
+		 int temp = Math.abs(n);
+	        while (temp != 0) {
+	            reverse = (reverse * 10) + (temp % 10);
+	            temp = temp / 10;
+	        }
+	        if(reverse == Math.abs(n)) {
+	        	return true;
+	        }
+	        return false;
+	}
+	
+	public static void main(String[] args) {
+		 int n = 12;
+		 System.out.println(isPalindrome(n));
+	}
+}

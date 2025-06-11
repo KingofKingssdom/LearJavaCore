@@ -1,0 +1,18 @@
+package Lambda;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import Contructor.Child;
+import Contructor.Example;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		Child child = new Child();
+		System.out.println(child);
+		 
+	       
+	}
+}

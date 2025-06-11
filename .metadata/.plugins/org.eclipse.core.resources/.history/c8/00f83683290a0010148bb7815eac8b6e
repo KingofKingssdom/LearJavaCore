@@ -1,0 +1,23 @@
+package Test;
+
+public class Test {
+	public static int UCLN(int a, int b) {
+		 while(b != 0) {
+			 int temp = b;
+			 b = a% b;
+			 a = temp;
+		 }
+		 return a;
+	}
+	public static int BCNN(int a, int b) {
+		int U = UCLN(a, b);
+		int result = (a*b)/ U;
+		return result;
+	}
+	public static void main(String[] args) {
+		int a = 12;
+		int b = 18;
+		System.out.println(BCNN(a,b));
+		
+	}
+}

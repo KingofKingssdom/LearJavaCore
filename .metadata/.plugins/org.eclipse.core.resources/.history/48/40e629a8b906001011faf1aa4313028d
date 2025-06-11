@@ -1,0 +1,12 @@
+package Contructor;
+
+public class Parent {
+	public Parent() {
+		System.out.println("Hàm tạo trong lớp Cha");
+	}
+
+    protected void m2()
+    {
+        System.out.println("From parent m2()");
+    }
+}

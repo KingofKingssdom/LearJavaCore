@@ -1,0 +1,11 @@
+package Contructor;
+
+public abstract class TruTuong {
+	private String name;
+	private int age;
+	public TruTuong(String name, int age) {
+		this.age = age;
+		this.name = name;
+	}
+	public abstract void print();
+}

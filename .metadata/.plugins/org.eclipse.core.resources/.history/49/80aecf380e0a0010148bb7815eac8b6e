@@ -1,0 +1,20 @@
+package Test;
+
+public class Test {
+	public static boolean luyThua(int x, int y) {
+		int pow = 1;
+		while(pow < y) {
+			pow *= x;
+			if(pow == y) {
+				return true;
+			}
+		}
+		return false;
+	}
+	public static void main(String[] args) {
+		int x = 5;
+		int y = 1;
+		System.out.println(luyThua(x,y));
+		
+	}
+}

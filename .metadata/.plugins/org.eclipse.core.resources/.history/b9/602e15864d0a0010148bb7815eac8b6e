@@ -1,0 +1,19 @@
+package Test;
+
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+	public static boolean soChiaHetChoBon(int n) {
+		if(n% 4 == 0) {
+			return true;
+		}
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		 int n = 11;
+		 System.out.println(soChiaHetChoBon(n));
+	}
+}

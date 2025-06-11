@@ -1,0 +1,17 @@
+package Test;
+
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+//	public static String chuyenThapPhanSangNhiPhan(int n) {
+//		
+//	}
+	
+	public static void main(String[] args) {
+		 int n = 1;
+	      char result = (char) ('0' + n);
+		System.out.println(result);
+	}
+}

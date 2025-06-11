@@ -1,0 +1,16 @@
+package Test;
+
+public class Test {
+	public static int TongBinhPhuong(int n) {
+		 int sum = 0;
+		 for(int i = 1;i<=n;i++) {
+			 sum += (i+i);
+		 }
+		 return sum;
+	}
+	public static void main(String[] args) {
+		int x = 2;
+		System.out.println(TongBinhPhuong(x));
+		
+	}
+}

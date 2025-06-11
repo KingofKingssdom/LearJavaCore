@@ -1,0 +1,11 @@
+package Contructor;
+
+public class Parent {
+	public Parent() {
+		System.out.println("Hàm tạo trong lớp Cha");
+	}
+
+   public Parent(String name) {
+	   System.out.println("Hàm tạo 2 trong lớp cha " + name);
+   }
+}

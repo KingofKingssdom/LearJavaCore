@@ -1,0 +1,23 @@
+package Arrays;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Test {
+	public static int phanTuLonNhat (int [] array) {
+		int n = array.length;
+		int max = array[0];
+		
+		for(int i = 1; i < n;i++) {
+			if(array[i -1] < array[i]) {
+				max = array[i];
+			}
+		}
+		return max;
+	}
+	public static void main(String[] args) {
+		int [] array = {10,20,30,40,50,60};
+		int result = phanTuLonNhat(array);
+		System.out.println(result);
+	}
+}
